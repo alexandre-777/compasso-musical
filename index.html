@@ -6,36 +6,88 @@
     <title>Compasso musical - Loja de instrumentos musicais</title>
     <!--css interno-->
     <style>
-      .titulo{
-          color: red;
-          background-color: aqua;
-          margin: 20px 20px;
-          padding: 20px 50px 100px 150;
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      h1, h2, h3 {
+        color: #1a1a1a;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      .cabecalhoPrincipal{
+        background-color: #f1f1f1;
+        padding: 1.5rem 5%;
+        box-shadow: 0 50px 50px rgba(0, 0, 0, 0.15);
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .titulo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #d32f2f;
+      }
+      .listaNavegacao{
+        display: flex;
+        gap: 2rem;
+      }
+
+      .linkNav {
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .linkNav:hover{
+        color: #d32f2f;
+      }
+      
     </style>
   </head>
   <body>
     <!-- Cabeçalho -->
-    <header id="header">
+    <header id="header" class="cabecalhoPrincipal">
       <div id="logo">
-        <h1 class="titulo" style="color: blue;">Compasso musical</h1>
+        <h1 class="titulo">Compasso musical</h1>
       </div>
       <nav>
-        <ul>
+        <ul class="listaNavegacao">
           <li>
-            <a href="#hero">Início</a>
+            <a href="#hero" class="linkNav">Início</a>
           </li>
           <li>
-            <a href="#sobre">Sobre</a>
+            <a href="#sobre" class="linkNav">Sobre</a>
           </li>
           <li>
-            <a href="#instrumentos">Instrumentos</a>
+            <a href="#instrumentos" class="linkNav">Instrumentos</a>
           </li>
           <li>
-            <a href="#depoimentos">Depoimentos</a>
+            <a href="#depoimentos" class="linkNav">Depoimentos</a>
           </li>
           <li>
-            <a href="">Contatos</a>
+            <a href="#contatos" class="linkNav">Contatos</a>
           </li>
         </ul>
       </nav>
@@ -76,7 +128,7 @@
           <article>
             <h3>Guitarra elétrica Stratocaster</h3>
             <img 
-            src="https://images.unsplash.com/photo-1649520067033-ef64fee2d060" 
+            src="guitarra eletrica.jpg" 
             alt="Imagem da guitarra Elétrica stratocaster"
             width="300"
             >
@@ -95,7 +147,7 @@
           <article>
             <h3>Kit bateria</h3>
             <img 
-            src="https://images.unsplash.com/photo-1504653601220-f1a8ece25e4a" 
+            src="kit bateria.jpg" 
             alt="Kit bateria"
             width="300"
             >
