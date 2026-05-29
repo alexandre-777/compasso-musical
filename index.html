@@ -89,6 +89,27 @@
         font-size: 2.5rem;
         margin-bottom: 2rem;
       }
+
+      .gradeInstrumentos{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .cartaoInstrumento{
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 1.5rem;
+        width: 300px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+
+      .cartaoInstrumento:hover{
+        transform: translateY(-5px);
+      }
     </style>
   </head>
   <body>
@@ -152,45 +173,49 @@
         </section>
 
         <!--Seção Instrumentos-->
-        <section id="instrumentos">
-          <h2>Cátalogos</h2>
-          <article>
-            <h3>Guitarra elétrica Stratocaster</h3>
-            <img 
-            src="guitarra eletrica.jpg" 
-            alt="Imagem da guitarra Elétrica stratocaster"
-            width="300"
-            >
-            <p>
-              <strong>Marca: </strong>Fender
-            </p>
-            <p>
-              Guitarra clássica de alata performace, ideal para rock e blues.
-            </p>
-            <p>
-              <em>Preço: R$ 3.500,00</em>
-            </p>
-            <a href="#">Adicionar ao carinho</a>
-          </article>
-
-          <article>
-            <h3>Kit bateria</h3>
-            <img 
-            src="kit bateria.jpg" 
-            alt="Kit bateria"
-            width="300"
-            >
-            <p>
-              <strong>Marca: </strong>Perl
-            </p>
-            <p>
-              Kit de bateria preto e roxo ideal para vc.
-            </p>
-            <p>
-              <em>Preço: R$ 13.900,00</em>
-            </p>
-            <a href="#">Adicionar ao carinho</a>
-          </article>
+        <section id="instrumentos" class="container" style="background-color: #eeeeee;">
+          <h2 class="tituloSecao">Cátalogos</h2>
+          <div class="gradeInstrumentos">
+            <article class="cartaoInstrumento">
+              <h3>Guitarra elétrica Stratocaster</h3>
+              <img 
+              src="guitarra eletrica.jpg" 
+              alt="Imagem da guitarra Elétrica stratocaster"
+              width="250"
+              style="border-radius: 4px; margin-bottom: 1rem;"
+              >
+              <p>
+                <strong>Marca: </strong>Fender
+              </p>
+              <p>
+                Guitarra clássica de alata performace, ideal para rock e blues.
+              </p>
+              <p style="color: #d32f2f; font-weight: bold;font-size: 1.2rem;">
+                <em>Preço: R$ 3.500,00</em>
+              </p>
+              <a href="#" class="botaoPrincipal">Adicionar ao carinho</a>
+            </article>
+  
+            <article class="cartaoInstrumento">
+              <h3>Kit bateria</h3>
+              <img 
+              src="kit bateria.jpg" 
+              alt="Kit bateria"
+              width="250"
+              style="border-radius: 4px; margin-bottom: 1rem;"
+              >
+              <p>
+                <strong>Marca: </strong>Perl
+              </p>
+              <p >
+                Kit de bateria preto e roxo ideal para você.
+              </p>
+              <p style="color: #d32f2f; font-weight: bold;font-size: 1.2rem;">
+                <em>Preço: R$ 13.900,00</em>
+              </p>
+              <a href="#" class="botaoPrincipal">Adicionar ao carinho</a>
+            </article>
+          </div>
         </section>
 
         <!--Seção de depoimentos-->
